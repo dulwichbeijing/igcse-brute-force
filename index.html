@@ -18,13 +18,9 @@
 
 		// Check if the hashed passcode matches the expected value
 		if (hashedPasscode === '14535fa9fa31185978444ea097423fe6') {
-			// Show the secret content
-			document.write('<h1>Welcome to the secret content!</h1>');
-			document.write('<p>You have successfully performed a brute force attack on this website</p>');
+			window.location = "success.html";
 		} else {
-			// Show an error message
-			document.write('<h1>Access Denied</h1>');
-			document.write('<p>You need the correct passcode to see the content.</p>');
+			window.location = "error.html";
 		}
 	</script>
 
